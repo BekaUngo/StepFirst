@@ -1,0 +1,10 @@
+.wrapper {
+    display: flex;
+    gap: 200px;
+
+    .car-box {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+}

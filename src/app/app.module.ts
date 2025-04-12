@@ -11,6 +11,8 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailComponent } from './user-list/user-detail/user-detail.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { SideBarDetailsComponent } from './side-bar/side-bar-details/side-bar-details.component';
+import { CarsComponent } from './cars/cars/cars.component';
+import { CarDetailsComponent } from './cars/cars/car-details/car-details.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { SideBarDetailsComponent } from './side-bar/side-bar-details/side-bar-de
     UserListComponent,
     UserDetailComponent,
     SideBarComponent,
-    SideBarDetailsComponent
+    SideBarDetailsComponent,
+    CarsComponent,
+    CarDetailsComponent
   ],
   imports: [
     BrowserModule,

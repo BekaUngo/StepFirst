@@ -1,0 +1,6 @@
+<div class="wrapper">
+    <div class="model-row" *ngFor="let model of infoToChild.models" [ngClass]="{ 'highlight': model.year > 2009 }" (click)="showPrice(model)">
+      <div class="model">Model Name: {{ model.modelName }}</div>
+      <div class="year">Year: {{ model.year }}</div>
+    </div>
+  </div>
