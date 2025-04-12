@@ -1,0 +1,17 @@
+.header-container {
+    padding: 20px;
+    background-color: rgb(40,140,230);
+
+    .page-list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+
+        .page {
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<div class="page-wrapper">
+  <div class="wrapper">
+    <div class="box" *ngFor="let tab of sideBarList">
+      <img [src]="tab.iconUrl" alt="" />
+      <p (click)="catchData(tab)">{{ tab.name }}</p>
+    </div>
+  </div>
+  <app-side-bar-details
+    [singleData]="singleData"
+    (emitImgUrl)="listenToEmit($event)"
+  ></app-side-bar-details>
+</div>
+
+<p [ngClass]="{'testClassTrue':randomNumber>5, 'testClassFalse':randomNumber<5}">This object has a photo - {{ hasPhoto }}</p>
+<button (click)="toggleVariable()">Toggle </button>
+
+<div class="circle" [ngStyle]="{'border-radius': randomNumber > 5 ? '100px' : '20px'}">
+    Element
+</div>
+
+

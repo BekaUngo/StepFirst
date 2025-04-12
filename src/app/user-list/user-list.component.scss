@@ -1,0 +1,17 @@
+.user-wrapper {
+    display: flex;
+    gap: 200px;
+    margin-top: 20px;
+
+    .user-container {
+        margin-left: 20px;
+
+        .test {
+            .user-box {
+                p {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<div class="user-wrapper">
+    <div class="user-container">
+        <h1>მომხმარებლების სია:</h1>
+        <div class="test"  *ngIf="userList.length>1">
+            <div class="user-box" *ngFor="let user of userList; trackBy: trackUserList">
+                <p (click)="selectUser(user)">{{user.id}}. {{user.name}}</p>
+            </div>
+        </div>
+    </div>
+    <p style="font-size: 30px;">{{testNumber}}</p>
+    <app-user-detail
+        [userDetailObject]="userDetailObject"
+        [inputBoolean]="inputBoolean"
+        (numberEmit)="listenChild($event)"
+    ></app-user-detail>
+</div>

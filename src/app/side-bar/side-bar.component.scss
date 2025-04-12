@@ -1,0 +1,46 @@
+.page-wrapper {
+    display: flex;
+    gap: 100px;
+
+    .wrapper {
+        .box  {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img {
+                width: 20px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    
+    }
+}
+
+.testClassTrue {
+    background-color: green;
+}
+.testClassFalse {
+    background-color: red;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    margin-left: 200px;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
