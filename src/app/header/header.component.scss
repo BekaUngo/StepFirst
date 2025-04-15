@@ -12,6 +12,15 @@
             font-size: 24px;
             cursor: pointer;
             color: white;
+
+            a {
+                color: white;
+                text-decoration: none;
+
+            &.active {
+                background-color: lightcoral;
+            }
+            }
         }
     }
 }

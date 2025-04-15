@@ -1,7 +1,16 @@
 <div class="header-container">
     <ul class="page-list">
-        <li class="page">მთავარი გვერდი</li>
-        <li class="page">ჩვენს შესახებ</li>
-        <li class="page">კონტაქტი</li>
+        <li class="page">
+            <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">მთავარი გვერდი</a>
+        </li>
+        <li class="page">
+            <a [routerLink]="['/about-us']" routerLinkActive="active">ჩვენს შესახებ</a>
+        </li>
+        <li class="page">
+            <a [routerLink]="['/contact']" routerLinkActive="active">კონტაქტი</a>
+        </li>
+        <li class="page">
+            <a [routerLink]="['/users',1,'beka']" [queryParams]="{age:'30'}" routerLinkActive="active">მომხმარებლები</a>
+        </li>
     </ul>
 </div>
