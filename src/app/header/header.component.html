@@ -10,7 +10,12 @@
             <a [routerLink]="['/contact']" routerLinkActive="active">კონტაქტი</a>
         </li>
         <li class="page">
-            <a [routerLink]="['/users',1,'beka']" [queryParams]="{age:'30'}" routerLinkActive="active">მომხმარებლები</a>
+            <a [routerLink]="['/users']" routerLinkActive="active">მომხმარებლები</a>
         </li>
     </ul>
+    <div class="login-option">
+        <button (click)="loginBtn()">Login</button>
+        <button (click)="logoutBtn()">logOut</button>
+    </div>
+
 </div>

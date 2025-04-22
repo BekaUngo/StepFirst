@@ -13,11 +13,6 @@ export class AboutUsComponent {
   ){}
 
   goToMainPage(){
-    this.router.navigate(['users', 10,'natali'],{
-      queryParams:{
-        age: 18
-      },
-      fragment:'Section1'
-    })
+    this.router.navigate(['users'])
   }
 }

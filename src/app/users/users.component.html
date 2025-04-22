@@ -1,9 +1,18 @@
-<h1>users works!</h1>
 
-<button (click)="sendNewData()">Send new Data</button>
+<div class="users">
+    <ol>
+        <li (click)="ShowUserDetailPage(1, 'Beka')">
+            <a>Beka Ungiadze</a>
+        </li>
+        <li (click)="ShowUserDetailPage(2,'Alex')">
+            <a>Alex Mataradze</a>
+        </li>
+        <li (click)="ShowUserDetailPage(3,'Natali')">
+            <a>Natali Shanava</a>
+        </li>
+    </ol>
+</div>
 
-<p>User Id: {{user?.id}}</p>
-<p>User Name: {{user?.name}}</p>
-<p style="margin-top: 2000px;">{{filterId}}</p>
-
-<div id="Section1">me var</div>
+<div class="user-details">
+    <router-outlet></router-outlet>
+</div>

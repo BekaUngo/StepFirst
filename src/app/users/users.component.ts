@@ -33,14 +33,9 @@ export class UsersComponent implements OnInit {
     this.myFragment = this.route.snapshot.fragment
   }
 
-  sendNewData(){
-    this.randomId = Math.ceil(Math.random()*20);
-    this.randomAge = Math.round(Math.random()*100)
-    this.router.navigate(['users', this.randomId,'natali'],{
-      queryParams:{
-        age: this.randomAge
-      },
-      fragment:'Section1'
+  ShowUserDetailPage(id:number,name:string){
+    this.router.navigate(['users', id, name],{
+      queryParams:{date:'22'}
     })
   }
 

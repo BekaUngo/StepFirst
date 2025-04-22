@@ -1,6 +1,8 @@
 .header-container {
     padding: 20px;
     background-color: rgb(40,140,230);
+    display: flex;
+    justify-content: space-between;
 
     .page-list {
         display: flex;
@@ -23,4 +25,15 @@
             }
         }
     }
+
+    .login-option {
+        display: flex;
+        gap: 15px;
+
+        button {
+            padding: 10px 25px;
+        }
+    }
+
+
 }

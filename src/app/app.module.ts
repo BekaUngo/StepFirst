@@ -7,8 +7,6 @@ import { BtnComponent } from './btn/btn.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
-import { UserListComponent } from './user-list/user-list.component';
-import { UserDetailComponent } from './user-list/user-detail/user-detail.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { SideBarDetailsComponent } from './side-bar/side-bar-details/side-bar-details.component';
 import { CarsComponent } from './cars/cars/cars.component';
@@ -17,6 +15,9 @@ import { MainComponent } from './main/main.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { UsersComponent } from './users/users.component';
+import { UserComponent } from './user/user.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -24,8 +25,6 @@ import { UsersComponent } from './users/users.component';
     AppComponent,
     BtnComponent,
     HeaderComponent,
-    UserListComponent,
-    UserDetailComponent,
     SideBarComponent,
     SideBarDetailsComponent,
     CarsComponent,
@@ -33,7 +32,10 @@ import { UsersComponent } from './users/users.component';
     MainComponent,
     ContactComponent,
     AboutUsComponent,
-    UsersComponent
+    UsersComponent,
+    UserComponent,
+    EditUserComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

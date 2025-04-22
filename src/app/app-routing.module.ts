@@ -4,12 +4,22 @@ import { MainComponent } from './main/main.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { UsersComponent } from './users/users.component';
+import { UserComponent } from './user/user.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AuthGuardService } from './services/auth-guard.service';
 
 const routes: Routes = [
+
   {path:'', component: MainComponent},
   {path:'about-us', component: AboutUsComponent},
   {path:'contact', component: ContactComponent},
-  {path:'users/:id/:name', component: UsersComponent},
+  {path:'users', component: UsersComponent, children:[
+    {path:':id/:name', component:UserComponent},
+    {path:'edit/:id/:name', component:EditUserComponent},
+  ], canActivate:[AuthGuardService]},
+  {path:'not-found',component:NotFoundComponent},
+  {path:'**', redirectTo:'not-found'},
 ];
 
 @NgModule({
@@ -21,6 +31,3 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-// სეგმენტი - გამოიყენება ლინკისთვის
-// ქვერი პარამეტრი
-// ფრაგმენტი
