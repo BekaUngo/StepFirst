@@ -1,0 +1,33 @@
+.login-container {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    height: 300px;
+    border-radius: 12px;
+    position: fixed;
+    top: 150px;
+    bottom: 0;
+    left: 150px;
+    right: 0;
+    background-color: lightblue;
+    .close-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    form {
+        padding: 20px;
+
+        .input-row {
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
