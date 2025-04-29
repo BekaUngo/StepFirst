@@ -1,5 +1,6 @@
+import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Observable, of, Subject } from "rxjs";
+import { filter, map, Observable, of, Subject } from "rxjs";
 
 
 
@@ -8,8 +9,27 @@ import { Observable, of, Subject } from "rxjs";
 })
 export class SubjectService {
 
-    test = of(1, 2, 3, 4)
+    constructor(
+        private http:HttpClient
+    ){}
 
+    test = of(1, 2, 3, 4).pipe(
+
+        filter((value,index)=>{
+            return value > 2
+        }),
+        map((value)=>{
+           return value * value
+        })
+
+    )
+
+    url:string = `https://api.everrest.educata.dev/shop/products/all?page_index=1&page_size=38`
+
+
+    getProduct(){
+        return this.http.get(this.url)
+    }
 
     newTest = new Observable((observer)=>{
         observer.next(Math.random());

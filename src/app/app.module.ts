@@ -20,6 +20,7 @@ import { EditUserComponent } from './edit-user/edit-user.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 
 @NgModule({
@@ -38,14 +39,15 @@ import { LoginComponent } from './login/login.component';
     UserComponent,
     EditUserComponent,
     NotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

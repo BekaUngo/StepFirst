@@ -27,26 +27,7 @@ export class MainComponent implements OnInit{
 
 
   ngOnInit(): void {
-
-    this.subjectService.newTest.subscribe(value=>{
-      console.log(value)
-    })
     
-    // this.subjectService.randomObs().subscribe(value=>{
-    //   console.log('subscriber 1', value)
-    // })
-    // this.subjectService.randomObs().subscribe(value=>{
-    //   console.log('subscriber 2', value)
-    // })
-
-    // this.subjectService.listenSubject().subscribe(value=>{
-    //   console.log('Subject 1', value)
-    // })
-    // this.subjectService.listenSubject().subscribe(value=>{
-    //   console.log('Subject 2', value)
-    // })
-
-    // this.subjectService.emitSubject()
   }
 
   searchText(input:any){
