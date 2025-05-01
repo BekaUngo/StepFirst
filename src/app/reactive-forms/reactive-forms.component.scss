@@ -1,0 +1,33 @@
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+    .my-form {
+
+        width: 600px;
+        .row-line {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            
+            input {
+                padding: 10px;
+
+                &.ng-touched.ng-invalid {
+                    outline: 1px solid red;
+                }
+            }
+
+            button {
+                background-color: lightblue;
+                padding: 10px;
+            }
+        }
+    }   
+
+}

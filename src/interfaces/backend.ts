@@ -8,3 +8,9 @@ export interface test {
     spiciness:number,
     vegeterian:boolean
 }
+
+export interface IBackendData {
+    userName:string,
+    lastName:string,
+    userEmail:string
+}

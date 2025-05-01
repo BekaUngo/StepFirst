@@ -1,6 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { debounceTime, Observable, of, pipe } from "rxjs";
+import { IBackendData } from "src/interfaces/backend";
 
 
 //Reactive Exstension for JS = rxjs
@@ -48,6 +49,10 @@ export class TestService {
     searchMethod(){
         const url = `https://api.everrest.educata.dev/shop/products/search?keywords=${this.userText}`
         return this.http.get(url)
+    }
+
+    registerUser(body:IBackendData){
+        return this.http.post('www.zz', body)
     }
 
 
