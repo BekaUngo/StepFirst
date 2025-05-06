@@ -15,16 +15,16 @@ import { TestFormComponent } from './test-form/test-form.component';
 const routes: Routes = [
 
   {path:'', component: MainComponent},
-  // {path:'about-us', component: AboutUsComponent},
-  // {path:'contact', component: ContactComponent},
-  // {path:'users', component: UsersComponent, children:[
-  //   {path:':id/:name', component:UserComponent},
-  //   {path:'edit/:id/:name', component:EditUserComponent},
-  // ], canActivate:[AuthGuardService]},
-  // {path:'template-driven-form',component:TemplateDrivenFormComponent},
-  // {path:'reactive-form',component:ReactiveFormsComponent},
-  // {path:'not-found',component:NotFoundComponent},
-  // {path:'**', redirectTo:'not-found'},
+  {path:'about-us', component: AboutUsComponent},
+  {path:'contact', component: ContactComponent},
+  {path:'users', component: UsersComponent, children:[
+    {path:':id/:name', component:UserComponent},
+    {path:'edit/:id/:name', component:EditUserComponent},
+  ], canActivate:[AuthGuardService]},
+  {path:'template-driven-form',component:TemplateDrivenFormComponent},
+  {path:'reactive-form',component:ReactiveFormsComponent},
+  {path:'not-found',component:NotFoundComponent},
+  {path:'**', redirectTo:'not-found'},
   {path:'reactive-form', component: TestFormComponent}
 ];
 
