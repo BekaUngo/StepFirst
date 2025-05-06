@@ -1,0 +1,31 @@
+<div class="page-wrapper">
+    <h1>Reactive Form</h1>
+    <form class="my-form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="user-name-last-name" formGroupName="userData">
+            <div class="row-line">
+                <label for="name">
+                    შენი სახელი *:
+                </label>
+                <input type="text" id="name" formControlName="userName">
+            </div>
+            <div class="row-line">
+                <label for="lastName">
+                    შენი გვარი:
+                </label>
+                <input type="text" id="lastName" formControlName="lastName">
+            </div>
+        </div>
+        <div class="row-line">
+            <label for="email">
+                შენი მეილი:
+            </label>
+            <input type="email" id="email" formControlName="userEmail">
+            <span *ngIf="myForm.controls['userEmail'].errors?.['required'] && myForm.controls['userEmail'].touched ">{{requiredError}}</span>
+            <span *ngIf="myForm.controls['userEmail'].errors?.['email'] && myForm.controls['userEmail'].touched ">{{emailError}}</span>
+        </div>
+        <div class="row-line">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <button (click)="setFormValues()">Change Form</button>
+</div>

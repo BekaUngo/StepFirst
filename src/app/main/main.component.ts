@@ -30,6 +30,14 @@ export class MainComponent implements OnInit{
     
   }
 
+  goTo(){
+    this.router.navigate(['reactive-form'],{
+      queryParams:{
+        name:'beka'
+      }
+    })
+  }
+
   searchText(input:any){
     this.testService.userText = this.inputText
     // console.log(this.testService.userText)

@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { TestFormComponent } from './test-form/test-form.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.componen
     NotFoundComponent,
     LoginComponent,
     TemplateDrivenFormComponent,
-    ReactiveFormsComponent
+    ReactiveFormsComponent,
+    TestFormComponent
   ],
   imports: [
     BrowserModule,
