@@ -20,6 +20,15 @@ import { LoginComponent } from './login/login.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { TestFormComponent } from './test-form/test-form.component';
+import { CustomPipe } from 'src/pipes/custom.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatNativeDateModule} from '@angular/material/core';
 
 
 @NgModule({
@@ -38,7 +47,8 @@ import { TestFormComponent } from './test-form/test-form.component';
     LoginComponent,
     TemplateDrivenFormComponent,
     ReactiveFormsComponent,
-    TestFormComponent
+    TestFormComponent,
+    CustomPipe
   ],
   imports: [
     BrowserModule,
@@ -47,8 +57,17 @@ import { TestFormComponent } from './test-form/test-form.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule, 
+    MatDatepickerModule,
+    MatButtonModule,
+    MatDividerModule, 
+    MatIconModule,
+    MatInputModule,
+    MatNativeDateModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
